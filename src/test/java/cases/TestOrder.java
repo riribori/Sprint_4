@@ -13,7 +13,7 @@ public class TestOrder extends BaseTest {
 
 
     @Test
-    public void TestOrder() {
+    public void testOrder() {
 
         driver.get("https://qa-scooter.praktikum-services.ru/");
 
@@ -29,7 +29,7 @@ public class TestOrder extends BaseTest {
         RentPage rentPage = new RentPage(driver);
         Calendar calendar = Calendar.getInstance();
         calendar.add(Calendar.DAY_OF_MONTH, 1);
-        SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.YY");
+        SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yy");
         String formattedDate = sdf.format(calendar.getTime()); // выбор даты сегодня + 1 день в календаре
         rentPage.setInputWhen(formattedDate);
         rentPage.setDropdownTime(RentTerm.SIXDAY);

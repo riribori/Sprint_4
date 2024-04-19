@@ -32,7 +32,7 @@ public class TestAnswers extends BaseTest {
     }
 
         @Test
-        public void TestAnswers(){
+        public void testAnswers(){
 
         driver.get("https://qa-scooter.praktikum-services.ru/");
         MainPage mainPage = new MainPage(driver);
